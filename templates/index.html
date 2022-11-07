@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Median value of owner-occupied homes in $1000s</h1>
+    <h4><a href="report.html">Click Here To See Data Analysis</a></h4>
+    <div class=form>
+        <form action="/predict" method="POST">
+            <input type="float" name="CRIM" id="CRIM" placeholder="CRIM">
+            <input type="float" name="ZN" id="ZN" placeholder="ZN">
+            <input type="float" name="INDUS" id="INDUS" placeholder="INDUS">
+            
+            <input type="float" name="NOX" id="NOX" placeholder="NOX">
+            <input type="float" name="RM" id="RM" placeholder="RM">
+            <input type="float" name="DIS" id="DIS" placeholder="DIS">
+            <input type="float" name="RAD" id="RAD" placeholder="RAD">
+            <input type="float" name="PTRATIO" id="PTRATIO" placeholder="PTRATIO">
+            <input type="float" name="B" id="B" placeholder="B">
+            <input type="float" name="LSTAT" id="LSTAT" placeholder="LSTAT">
+
+            <select name="CHAS" id="CHAS">
+                
+                
+                <option  value="yes">yes</option>
+                <option value="no">No</option>
+              </select>
+                          <input type="submit" value="Predict">
+
+
+        </form>
+        <h6>NB-->CHAS: Charles River dummy variable  YES if tract bounds river; NO otherwise</h6>
+    </div>
+    
+</body>
+</html>
